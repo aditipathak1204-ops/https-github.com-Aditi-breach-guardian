@@ -1,4 +1,4 @@
-import { useState } from "react"; 
+import { useState } from "react"; // Ensure lowercase 'i'
 
 export default function BreachChecker() {
   const [query, setQuery] = useState("");
@@ -37,7 +37,7 @@ export default function BreachChecker() {
       }
       setLoading(false);
     }, 1000);
-  }; 
+  }; // <--- ADD THIS LINE TO CLOSE handleSearch
 
   return (
     <div style={{ maxWidth: "600px", margin: "auto", padding: "20px" }}>
@@ -87,5 +87,5 @@ export default function BreachChecker() {
         </div>
       )}
     </div>
-  );
+  ); 
 } 
